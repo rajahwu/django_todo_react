@@ -15,9 +15,9 @@ export async function getData() {
 
 export default async function Page() {
     const todos = await getData()
-    console.log({todos : todos})
     return (
         <div>
+          <button className="btn btn-primary">Add todo</button>
           {todos.length > 0 ? (
             <TodoList todos={todos} />
           ) : (

@@ -17,6 +17,7 @@ export default function TodoListItem({ todo }: { todo: Todo }) {
                 <td>{title}</td>
                 <td>{description}</td>
                 <td>{completed ? "checked" : "not checked"}</td>
+                <td><TodoListItemButtons /></td>
             </tr>
     )
 }
