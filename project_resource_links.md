@@ -9,4 +9,4 @@
 [https://www.django-rest-framework.org/tutorial/quickstart/](https://www.django-rest-framework.org/tutorial/quickstart/)
 [https://dev.to/skipperhoa/building-a-simple-crud-api-with-nextjs-13-40eh](https://dev.to/skipperhoa/building-a-simple-crud-api-with-nextjs-13-40eh)
 [https://codevoweb.com/setup-react-query-in-nextjs-13-app-directory/](https://codevoweb.com/setup-react-query-in-nextjs-13-app-directory/)
-[https://medium.com/@amavictor how-to-use-react-query-axios-and-a-custom-request-processor-to-transform-your-data-2a9f0c9f5bf0](https://medium.com/@amavictor how-to-use-react-query-axios-and-a-custom-request-processor-to-transform-your-data-2a9f0c9f5bf0)
+[https://medium.com/@amavictor how-to-use-react-query-axios-and-a-custom-request-processor-to-transform-your-data-2a9f0c9f5bf0](https://medium.com/@amavictor/how-to-use-react-query-axios-and-a-custom-request-processor-to-transform-your-data-2a9f0c9f5bf0)
