@@ -13,7 +13,7 @@ export async function udpateTodo(todo: Todo) {
 }
 
 export async function createTodo(todo: Todo) {
-  const res = await axios.post(`${PROXY}/api/todos/${todo.id}/`, todo);
+  const res = await axios.post(`${PROXY}/api/todos/`, todo);
   return res;
 }
 
