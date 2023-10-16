@@ -1,20 +1,9 @@
 import { TodoList } from "@/components";
 import axios from "axios";
 
-import { type Todo } from "@/todo.types";
-
-export async function getData() {
-    try {
-        const response = await axios.get("http://localhost:8000/api/todos/");
-        return response.data as Todo[];
-      } catch (err) {
-        console.error(err);
-        return [] as Todo[];
-      }
-}
-
 export default async function Page() {
-    const todos = await getData()
+    const request = await axios("http://localhost:3000/todos/api")
+    const todos = await request.data
     return (
         <div>
           <button className="btn btn-primary">Add todo</button>
