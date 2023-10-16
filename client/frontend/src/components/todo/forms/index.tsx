@@ -26,7 +26,6 @@ export default function TodoForm() {
     const todo = await createTodo(payload)
     console.log("created todo", todo)
     return todo
-
   }
 
   return (
