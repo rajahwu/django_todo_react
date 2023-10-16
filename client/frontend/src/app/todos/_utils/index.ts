@@ -4,13 +4,7 @@ import axios from "axios";
 export const PROXY = "http://localhost:8000";
 
 export async function getTodos() {
-  try {
-    const response = await axios.get(`${PROXY}/api/todos/`);
-    return response.data as Todo[];
-  } catch (err) {
-    console.error(err);
-    return [] as Todo[];
-  }
+    return await axios.get(`${PROXY}/api/todos/`).then((res) => res.data);
 }
 
 export async function udpateTodo(todo: Todo) {

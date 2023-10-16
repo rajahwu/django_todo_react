@@ -14,3 +14,22 @@ export async function GET(request: Request) {
     return [] as Todo[];
   }
 }
+
+export async function POST(request: Request) {
+  try {
+    // Extract data from the request, or you can pass the data as needed
+    const data = { title: "New Todo", description: "This is a new todo", completed: false };
+
+    const response = await axios.post(`${PROXY}/api/todos/`, data);
+    
+    if (response.status === 201) {
+      const newTodo = response.data as Todo;
+      return NextResponse.json(newTodo, { status: 201 });
+    } else {
+      return NextResponse.error();
+    }
+  } catch (err) {
+    console.error(err);
+    return NextResponse.error();
+  }
+}
