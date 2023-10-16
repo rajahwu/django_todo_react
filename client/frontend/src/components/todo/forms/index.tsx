@@ -1,8 +1,17 @@
+import { type Todo } from "@/todo.types";
+import { createTodo } from "@/app/todos/_utils";
+
+
+
 export default function TodoForm() {
   async function create(formData: FormData) {
     "use server";
 
-    const payload: { [key: string]: string } = {};
+    const payload: Todo = {
+      "title": "",
+      "description": "",
+      "completed": false
+    };
 
     formData.forEach((value: FormDataEntryValue, key: string) => {
       if (
@@ -12,6 +21,8 @@ export default function TodoForm() {
         payload[key] = value;
       }
     });
+
+    createTodo(payload)
 
     console.log(payload);
   }
