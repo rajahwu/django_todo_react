@@ -1,5 +1,5 @@
-import TodoList from "./TodoList";
-import TodoListItem from "./TodoListItem";
+import TodoList from "./todo/TodoList"
+import TodoListItem from "./todo/TodoList"
 
 export {
     TodoList,

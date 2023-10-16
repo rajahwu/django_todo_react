@@ -1,5 +1,5 @@
 import { type Todo } from "@/todo.types";
-import { TodoListItem } from "..";
+import TodoListItem from "../TodoListItem";
 
 export default function TodoList({ todos }: { todos: Todo[] }) {
   return (

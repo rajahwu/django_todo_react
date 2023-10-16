@@ -1,10 +1,13 @@
 import { type Todo } from "@/todo.types"
 
-export function TodoListItemButtons() {
+import EditTodoButton from "../buttons/EditTodoButton"
+import DeleteTodoButton from "../buttons/DeleteTodoButton"
+
+export function TodoListItemButtonContainer() {
     return (
         <div>
-            <button className="btn btn-info">Edit</button>
-            <button className="btn btn-error">Delete</button>
+            <EditTodoButton />
+            <DeleteTodoButton />
         </div>
     )
 }
@@ -17,7 +20,7 @@ export default function TodoListItem({ todo }: { todo: Todo }) {
                 <td>{title}</td>
                 <td>{description}</td>
                 <td>{completed ? "checked" : "not checked"}</td>
-                <td><TodoListItemButtons /></td>
+                <td><TodoListItemButtonContainer /></td>
             </tr>
     )
 }
