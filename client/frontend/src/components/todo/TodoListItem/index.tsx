@@ -5,7 +5,7 @@ import DeleteTodoButton from "../buttons/DeleteTodoButton"
 
 export function TodoListItemButtonContainer() {
     return (
-        <div>
+        <div className="btn-group">
             <EditTodoButton />
             <DeleteTodoButton />
         </div>

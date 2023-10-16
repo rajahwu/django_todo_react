@@ -3,14 +3,14 @@ import TodoListItem from "../TodoListItem";
 
 export default function TodoList({ todos }: { todos: Todo[] }) {
   return (
-    <div className="overflow-x-auto">
+    <div className="overflow-x-auto card">
       <table className="table">
         <thead>
           <tr>
-            <th>id</th>
+            <th></th>
             <th>title</th>
             <th>description</th>
-            <th>is complete</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
