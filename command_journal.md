@@ -10,6 +10,7 @@ poetry --version
 poetry new mysite
 rm -rf myapp/ tests/
 poetry add django
+poetry add djangorestframework
 bun init
 ```
 
